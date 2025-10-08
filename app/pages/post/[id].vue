@@ -5,9 +5,6 @@
         <template #leading>
           <UDashboardSidebarCollapse />
         </template>
-        <template #right>
-          <CustomersAddModal />
-        </template>
       </UDashboardNavbar>
     </template>
     <template #body>
