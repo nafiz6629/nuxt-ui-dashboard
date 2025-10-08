@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@nuxthub/core'
   ],
 
   devtools: {
@@ -12,13 +13,19 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  routeRules: {
-    '/api/**': {
-      cors: true
-    }
-  },
+  // routeRules: {
+  //   '/api/**': {
+  //     cors: true
+  //   }
+  // },
 
   compatibilityDate: '2024-07-11',
+  hub: {
+    database: true,
+    kv: true,
+    blob: true,
+    cache: true
+  },
 
   eslint: {
     config: {

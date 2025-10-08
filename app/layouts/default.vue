@@ -13,7 +13,16 @@ const links = [[{
   onSelect: () => {
     open.value = false
   }
-}, {
+},
+{
+  label: 'Post',
+  icon: 'i-lucide-house',
+  to: '/post',
+  onSelect: () => {
+    open.value = false
+  }
+},
+{
   label: 'Inbox',
   icon: 'i-lucide-inbox',
   to: '/inbox',
