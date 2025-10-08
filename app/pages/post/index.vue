@@ -53,3 +53,23 @@ const { data, status, refresh }: any = await useLazyFetch('/api/post_list',
   }
 )
 </script>
+
+<style scoped>
+table, th, td {
+  /* Set a border style, width, and color */
+  border: 1px solid #ccc; /* 1 pixel thick, solid line, light gray color */
+}
+
+table {
+  /* This is important for making the borders look like a single, crisp line */
+  border-collapse: collapse;
+  /* Optional: make the table take up the full width */
+  width: 100%;
+}
+
+/* Optional: Add padding for better spacing */
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+</style>
